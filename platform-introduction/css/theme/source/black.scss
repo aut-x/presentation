@@ -12,8 +12,8 @@
 
 
 // Include theme-specific fonts
-@import url(../../../lib/font/source-sans-pro/source-sans-pro.css);
-@import url(../../../lib/font/shabnam/font-face.css);
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/shabnam/font-face.css);
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #222;
@@ -37,6 +37,8 @@ $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
+$orange: #ffcc00;
+
 section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
 		color: #222;
@@ -47,3 +49,7 @@ section.has-light-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal .outline {
+	color: $orange;
+}
